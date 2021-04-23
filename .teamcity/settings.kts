@@ -1,6 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
 import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.script
-import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.spaceConnection
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -29,16 +28,6 @@ version = "2020.2"
 project {
 
     buildType(Build)
-
-    features {
-        spaceConnection {
-            id = "PROJECT_EXT_4"
-            displayName = "JetBrains Space"
-            serverUrl = "ds"
-            clientId = "s"
-            clientSecret = "credentialsJSON:7d5850cb-4e5e-4946-9360-8134f69e7332"
-        }
-    }
 }
 
 object Build : BuildType({
