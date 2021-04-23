@@ -28,7 +28,7 @@ version = "2020.2"
 
 project {
 
-    vcsRoot(Df)
+    vcsRoot(Dfg)
 
     buildType(Build)
 
@@ -42,7 +42,7 @@ object Build : BuildType({
 
     vcs {
         root(DslContext.settingsRoot)
-        root(Df)
+        root(Dfg)
     }
 
     steps {
@@ -53,7 +53,7 @@ object Build : BuildType({
 })
 
 object Df : GitVcsRoot({
-    name = "df"
+    name = "dfg"
     url = "http://github.com/AChubatova/composite"
     branch = "refs/heads/master"
 })
