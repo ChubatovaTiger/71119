@@ -28,7 +28,7 @@ version = "2020.2"
 
 project {
 
-    vcsRoot(Dfga)
+    vcsRoot(Dfg)
 
     buildType(Build)
 
@@ -42,9 +42,13 @@ object Build : BuildType({
 
     buildNumberPattern = "chubatova%build.counter%chubatova"
 
+    params {
+        param("a", "a")
+    }
+
     vcs {
         root(DslContext.settingsRoot)
-        root(Dfga)
+        root(Dfg)
     }
 
     steps {
@@ -54,7 +58,7 @@ object Build : BuildType({
     }
 })
 
-object Dfga : GitVcsRoot({
+object Dfg : GitVcsRoot({
     name = "dfg"
     url = "http://github.com/AChubatova/composite"
     branch = "refs/heads/master"
