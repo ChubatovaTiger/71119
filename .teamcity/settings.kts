@@ -52,7 +52,7 @@ object Build : BuildType({
     }
 })
 
-object Df : GitVcsRoot({
+object Dfg : GitVcsRoot({
     name = "dfg"
     url = "http://github.com/AChubatova/composite"
     branch = "refs/heads/master"
