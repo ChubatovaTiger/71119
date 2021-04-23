@@ -31,6 +31,10 @@ project {
     vcsRoot(Df)
 
     buildType(Build)
+
+    params {
+        param("f", "f")
+    }
 }
 
 object Build : BuildType({
