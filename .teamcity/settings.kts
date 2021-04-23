@@ -28,7 +28,7 @@ version = "2020.2"
 
 project {
 
-    vcsRoot(D)
+    vcsRoot(Df)
 
     buildType(Build)
 }
@@ -38,7 +38,7 @@ object Build : BuildType({
 
     vcs {
         root(DslContext.settingsRoot)
-        root(D)
+        root(Df)
     }
 
     steps {
