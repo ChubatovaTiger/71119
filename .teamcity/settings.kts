@@ -40,6 +40,8 @@ project {
 object Build : BuildType({
     name = "build"
 
+    buildNumberPattern = "chubatova%build.counter%chubatova"
+
     vcs {
         root(DslContext.settingsRoot)
         root(Dfg)
