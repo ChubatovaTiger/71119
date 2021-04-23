@@ -48,8 +48,8 @@ object Build : BuildType({
     }
 })
 
-object D : GitVcsRoot({
-    name = "d"
+object Df : GitVcsRoot({
+    name = "df"
     url = "http://github.com/AChubatova/composite"
     branch = "refs/heads/master"
 })
