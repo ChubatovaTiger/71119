@@ -33,6 +33,10 @@ project {
 object Build : BuildType({
     name = "build"
 
+    vcs {
+        root(DslContext.settingsRoot)
+    }
+
     steps {
         script {
             scriptContent = "echo tiger"
